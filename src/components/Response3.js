@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NextButton from './NextButton';
 
-const Response2 = () => {
+const Response3 = () => {
   const navigate = useNavigate();
 
   const handleKeyPress = useCallback((e) => {
@@ -21,9 +21,9 @@ const Response2 = () => {
   return (
     <div style={{ position: 'relative', height: '100vh' }}>
       <img src="images/REPONSE3.png" alt="Réponse 3" style={{ width: '100%', height: '100%' }} />
-      <NextButton to="/score" />
+      <NextButton to="/question4" />
     </div>
   );
 };
 
-export default Response2;
+export default Response3;
