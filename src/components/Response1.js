@@ -1,0 +1,26 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import NextButton from './NextButton';
+
+const Response1 = () => {
+  const navigate = useNavigate();
+  const handleKeyPress = (e) => {
+    if (e.key === ' ' || e.key === 'ArrowRight') {
+      navigate('/question2');
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
+
+  return (
+    <div style={{ position: 'relative', height: '100vh' }}>
+      <img src="images/REPONSE1.png" alt="Title" style={{ width: '100%', height: '100%' }} />
+      <NextButton to="/question2" />
+    </div>
+  );
+};
+
+export default Response1;
