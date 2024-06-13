@@ -21,7 +21,7 @@ const Response2 = () => {
   return (
     <div style={{ position: 'relative', height: '100vh' }}>
       <img src="images/REPONSE2.png" alt="Réponse 2" style={{ width: '100%', height: '100%' }} />
-      <NextButton to="/score" />
+      <NextButton to="/question3" />
     </div>
   );
 };

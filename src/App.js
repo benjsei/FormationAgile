@@ -6,6 +6,8 @@ import Question1 from './components/Question1';
 import Response1 from './components/Response1';
 import Question2 from './components/Question2';
 import Response2 from './components/Response2';
+import Question3 from './components/Question3';
+import Response3 from './components/Response3';
 import Score from './components/Score';
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/response1" element={<Response1 />} />
         <Route path="/question2" element={<Question2 setScore={setScore} />} />
         <Route path="/response2" element={<Response2 />} />
+        <Route path="/question3" element={<Question3 setScore={setScore} />} />
+        <Route path="/response3" element={<Response3 />} />
         <Route path="/score" element={<Score score={score} />} />
       </Routes>
     </Router>

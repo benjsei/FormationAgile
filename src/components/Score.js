@@ -11,7 +11,7 @@ const Score = ({ score }) => {
           left: '50%',
           transform: 'translate(-50%, -50%)',
           color: 'black',
-          fontSize: '3em',
+          fontSize: '3vw',
           fontFamily: 'Comic Sans MS, cursive, sans-serif',
           textAlign: 'center'
         }}
