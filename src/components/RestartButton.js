@@ -5,16 +5,16 @@ const RestartButton = ({ resetScore }) => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   
+  const resetAndNavigate = useCallback(() => {
+    resetScore();
+    navigate('/');
+  }, [navigate, resetScore]);
+
   const handleKeyPress = useCallback((e) => {
     if (e.key === ' ' || e.key === 'ArrowRight') {
       resetAndNavigate();
     }
-  }, [navigate, resetScore]);
-
-  const resetAndNavigate = () => {
-    resetScore();
-    navigate('/');
-  };
+  }, [resetAndNavigate]);
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 2000);
