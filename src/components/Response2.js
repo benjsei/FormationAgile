@@ -19,7 +19,7 @@ const Response2 = () => {
   }, [handleKeyPress]);
 
   return (
-    <div style={{ position: 'relative', height: '100vh' }}>
+    <div style={{ position: 'relative' }}>
       <img src="images/REPONSE2.jpg" alt="Réponse 2" style={{ width: '100%', height: '100%' }} />
       <NextButton to="/question3" />
     </div>

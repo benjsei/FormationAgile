@@ -1,8 +1,9 @@
 import React from 'react';
+import RestartButton from './RestartButton';
 
-const Score = ({ score }) => {
+const Score = ({ score, resetScore }) => {
   return (
-    <div style={{ position: 'relative', height: '100vh', backgroundColor: 'black' }}>
+    <div style={{ position: 'relative', backgroundColor: 'black' }}>
       <img src="/images/SCORE.jpg" alt="Score" style={{ width: '100%', height: '100%' }} />
       <div 
         style={{
@@ -18,6 +19,7 @@ const Score = ({ score }) => {
       >
         Votre SCORE est de {score}/9
       </div>
+      <RestartButton resetScore={resetScore} />
     </div>
   );
 };

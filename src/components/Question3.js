@@ -10,7 +10,7 @@ const QUESTION3 = ({ setScore }) => {
   };
 
   return (
-    <div style={{ position: 'relative', height: '100vh', backgroundColor: 'black' }}>
+    <div style={{ position: 'relative', backgroundColor: 'black' }}>
       <img src="/images/QUESTION3.jpg" alt="Question 3" style={{ width: '100%', height: '100%' }} />
       <ChoiceImage
         src="/images/QUESTION3_CHOIX1.png"

@@ -25,6 +25,8 @@ import Score from './components/Score';
 const App = () => {
   const [score, setScore] = useState(0);
 
+  const resetScore = () => setScore(0);
+
   return (
     <Router>
       <Routes>
@@ -48,7 +50,7 @@ const App = () => {
         <Route path="/response8" element={<Response8 />} />
         <Route path="/question9" element={<Question9 setScore={setScore} />} />
         <Route path="/response9" element={<Response9 />} />
-        <Route path="/score" element={<Score score={score} />} />
+        <Route path="/score" element={<Score score={score} resetScore={resetScore} />} />
       </Routes>
     </Router>
   );
