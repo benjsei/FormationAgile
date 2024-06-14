@@ -3,7 +3,7 @@ import React from 'react';
 const Score = ({ score }) => {
   return (
     <div style={{ position: 'relative', height: '100vh', backgroundColor: 'black' }}>
-      <img src="/images/SCORE.png" alt="Score" style={{ width: '100%', height: '100%' }} />
+      <img src="/images/SCORE.jpg" alt="Score" style={{ width: '100%', height: '100%' }} />
       <div 
         style={{
           position: 'absolute',
@@ -16,7 +16,7 @@ const Score = ({ score }) => {
           textAlign: 'center'
         }}
       >
-        Votre SCORE est de {score}/20
+        Votre SCORE est de {score}/9
       </div>
     </div>
   );

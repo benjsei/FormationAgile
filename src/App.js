@@ -10,6 +10,16 @@ import Question3 from './components/Question3';
 import Response3 from './components/Response3';
 import Question4 from './components/Question4';
 import Response4 from './components/Response4';
+import Question5 from './components/Question5';
+import Response5 from './components/Response5';
+import Question6 from './components/Question6';
+import Response6 from './components/Response6';
+import Question7 from './components/Question7';
+import Response7 from './components/Response7';
+import Question8 from './components/Question8';
+import Response8 from './components/Response8';
+import Question9 from './components/Question9';
+import Response9 from './components/Response9';
 import Score from './components/Score';
 
 const App = () => {
@@ -28,6 +38,16 @@ const App = () => {
         <Route path="/response3" element={<Response3 />} />
         <Route path="/question4" element={<Question4 setScore={setScore} />} />
         <Route path="/response4" element={<Response4 />} />
+        <Route path="/question5" element={<Question5 setScore={setScore} />} />
+        <Route path="/response5" element={<Response5 />} />
+        <Route path="/question6" element={<Question6 setScore={setScore} />} />
+        <Route path="/response6" element={<Response6 />} />
+        <Route path="/question7" element={<Question7 setScore={setScore} />} />
+        <Route path="/response7" element={<Response7 />} />
+        <Route path="/question8" element={<Question8 setScore={setScore} />} />
+        <Route path="/response8" element={<Response8 />} />
+        <Route path="/question9" element={<Question9 setScore={setScore} />} />
+        <Route path="/response9" element={<Response9 />} />
         <Route path="/score" element={<Score score={score} />} />
       </Routes>
     </Router>

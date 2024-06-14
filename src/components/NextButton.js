@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const NextButton = ({ to }) => {
+const NextButton = ({ to, imgSrc }) => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   
@@ -38,7 +38,7 @@ const NextButton = ({ to }) => {
         e.currentTarget.style.transform = 'scale(1.0)';
       }}
     >
-      <img src="/images/BOUTONSUIVANT.png" alt="Question Suivante" style={{ width: '20vw' }} />
+      <img src={imgSrc || "/images/BOUTONSUIVANT.png"} alt="Suivant" style={{ width: '20vw' }} />
     </div>
   );
 };

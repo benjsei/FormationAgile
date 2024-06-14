@@ -7,7 +7,7 @@ const Response4 = () => {
 
   const handleKeyPress = useCallback((e) => {
     if (e.key === ' ' || e.key === 'ArrowRight') {
-      navigate('/score');
+      navigate('/question5');
     }
   }, [navigate]);
 
@@ -20,8 +20,8 @@ const Response4 = () => {
 
   return (
     <div style={{ position: 'relative', height: '100vh' }}>
-      <img src="images/REPONSE4.png" alt="Réponse 4" style={{ width: '100%', height: '100%' }} />
-      <NextButton to="/score" />
+      <img src="images/REPONSE4.jpg" alt="Réponse 4" style={{ width: '100%', height: '100%' }} />
+      <NextButton to="/question5" />
     </div>
   );
 };

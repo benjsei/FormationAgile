@@ -5,29 +5,27 @@ import ChoiceImage from './ChoiceImage';
 const Question1 = ({ setScore }) => {
   const navigate = useNavigate();
   const handleChoice = (choice) => {
-    setScore(prevScore => prevScore + (choice === 'A' ? 7 : 0)); // Ajustez le calcul du score selon les besoins
+    setScore(prevScore => prevScore + (choice === 'B' ? 1 : 0)); 
     navigate('/response1');
   };
 
   return (
     <div style={{ position: 'relative', height: '100vh', backgroundColor: 'black' }}>
-      <img src="/images/QUESTION1.png" alt="Question 1" style={{ width: '100%', height: '100%' }} />
+      <img src="/images/QUESTION1.jpg" alt="Question 1" style={{ width: '100%', height: '100%' }} />
       <ChoiceImage
         src="/images/QUESTION1_CHOIX1.png"
         alt="Choix A"
-        top="20%"
+        top="15%"
         left="33%"
         width="33%"
-        height="45%"
         onClick={() => handleChoice('A')}
       />
       <ChoiceImage
         src="/images/QUESTION1_CHOIX2.png"
         alt="Choix B"
-        top="2%"
+        top="1%"
         left="68%"
-        width="31%"
-        height="64%"
+        width="30%"
         onClick={() => handleChoice('B')}
       />
     </div>

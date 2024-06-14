@@ -20,7 +20,7 @@ const Response3 = () => {
 
   return (
     <div style={{ position: 'relative', height: '100vh' }}>
-      <img src="images/REPONSE3.png" alt="Réponse 3" style={{ width: '100%', height: '100%' }} />
+      <img src="images/REPONSE3.jpg" alt="Réponse 3" style={{ width: '100%', height: '100%' }} />
       <NextButton to="/question4" />
     </div>
   );
