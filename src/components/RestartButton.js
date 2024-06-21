@@ -29,8 +29,8 @@ const RestartButton = ({ resetScore }) => {
     <div 
       style={{
         position: 'absolute',
-        bottom: '10%',
-        right: '10%',
+        bottom: '5%',
+        right: '5%',
         cursor: 'pointer',
         display: visible ? 'block' : 'none',
         transition: 'transform 0.3s ease'

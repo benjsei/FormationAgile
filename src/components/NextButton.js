@@ -25,7 +25,7 @@ const NextButton = ({ to, imgSrc }) => {
       style={{
         position: 'absolute',
         bottom: '10%',
-        right: '10%',
+        right: '5%',
         cursor: 'pointer',
         display: visible ? 'block' : 'none',
         transition: 'transform 0.3s ease'
