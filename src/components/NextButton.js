@@ -24,8 +24,8 @@ const NextButton = ({ to, imgSrc }) => {
     <div 
       style={{
         position: 'absolute',
-        bottom: '20px',
-        right: '20px',
+        bottom: '10%',
+        right: '10%',
         cursor: 'pointer',
         display: visible ? 'block' : 'none',
         transition: 'transform 0.3s ease'
